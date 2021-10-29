@@ -1,11 +1,11 @@
 
 <html>
   <head>
-	<meta name="description" content="PhD defense of Hui Guo (hguo5@ncsu.edu)">
-	<meta name="keywords" content="PhD,defense,Final Oral Exam,Hui Guo,NCSU,NC State,Story Understanding,Event Inference,Event Pairs,NLP">
-	<meta name="author" content="Hui Guo NCSU">
+	<meta name="description" content="Written Prelim for Amanul Haque (ahaque2@ncsu.edu)">
+	<meta name="keywords" content="PhD, Written prelim exam,Amanul Haque, NCSU, NLP, Preference, comparative sentences, app reviews, user generated text">
+	<meta name="author" content="Amanul Haque NCSU">
 	<meta charset="UTF-8">
-    <title>Hui Guo's PhD Defense</title>
+    <title>Amanul Haque written prelim</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
 	<link rel="Shortcut Icon" type="image/x-icon" href="styles/favicon.ico" />	
   </head>
@@ -21,21 +21,20 @@
 			<div class="header-info">
 				
 				<div>
-				  <h1>Extraction and Analysis of Stories: Natural Language Processing for Software Engineering</h1>
-					<span>Hui Guo's dessertation on the extraction and application of events and stories from textual artifacts related to software engineering.
+				  <h1>Pixie: Preference in Implicit and Explicit Comparisons</h1>
+					<span>Amanul Haque's written prelim exam.
 					</span>
 					<br/><br/>
-					  <span>Defender: <a href="https://hguo5.github.io/">Hui Guo</a> (<a href="mailto:hguo5@ncsu.edu">hguo5@ncsu.edu</a>)</span>
+					  <span>Defender: <a href="mailto:ahaque2@ncsu.edu">ahaque2@ncsu.edu</a></span>
 					<br/>
-					  <span>Unconditionally passed on: May 11th, 2021, 10:00AM - 12:00PM on Zoom</span><br/>
+					  <span>November 12th, 2021, 11:45AM - 01:15PM on Zoom</span><br/>
             <span>Advisor: Dr. Munindar P. Singh (<a href="mailto:mpsingh@ncsu.edu ">mpsingh@ncsu.edu </a>)</span>
            <br/>
             <span>Committee:</span>
             <ul>
-		    <li> Dr. Munindar P. Singh (Chair)</li>
-		    <li> Dr. Christopher Healey </li>
-		    <li> Dr. Arnav Jhala</li>
-		    <li> Dr. Collin Lynch</li>
+		    <li> Dr. Brad Reaves (Chair and Department Representative) </li>
+		    <li> Dr. Munindar P. Singh (Advisor)</li>
+		    <li> Dr. Arnav Jhala (Area representative)</li>
              </ul>
 				</div>
 			</div>
@@ -48,120 +47,48 @@
 			<div id="abstract">
 				<div class="bodypara-head">Abstract</div>
 				<div class="bodypara-text">
-<p>Modern software systems are deployed in sociotechnical settings, combining social entities (humans
-and organizations) with technical entities (software and devices). After the deployment of such software
-systems, users constantly interact with them, incurring events and stories regarding how the two parties
-behave in different scenarios. These events and stories are often captured in natural language artifacts,
-such as reports and reviews. A story, in the sense of natural language processing, comprises a sequence
-of events. In this work, we consider an event as a textual <i>event phrase</i> that describes a single action.
-Stories about system failures can inform developers or other responsible parties of how to improve the
-systems. Stories about how users behave before and after system problems can provide insights into
-users’ expectations or the best practices to overcome the failures. Extracting and understanding the
-interaction stories between social and technical entities can promote the incremental improvement of
-software systems.</p>
-
-<p>We target the extraction and understanding of informative events and stories from textual artifacts
-that describe the interaction between software systems and their users. This research includes three
-incremental components, which focus on informative events, event pairs, and stories, respectively. First,
-we develop EMBER, a framework for extracting informative events from breach reports and suggesting
-actions based on the association between breach descriptions and corrective actions. Breach reports
-describe what happened during and after data breaches in the healthcare domain. Actions taken by the
-responsible parties afterward can be considered as lessons learned about how to prevent, mitigate, and
-remedy future data breaches. Second, we introduce CASPAR, a method for extracting and analyzing
-user-reported event pairs regarding app problems from app reviews. CASPAR collects pairs of events,
-the first of which describes a user action and the second of which describes an app problem triggered
-by the user action. These action-problem event pairs capture the essence of the bug-report type of app
-reviews, and provide information that helps developers maintain and improve the app’s functionality
-and user experience. Finally, we develop SCHETURE, a framework for extracting informative stories and
-analyzing story structures as patterns of event types in app reviews. Building on CASPAR, SCHETURE
-targets more event types and how to sequence the events into stories. SCHETURE enables the collection
-of stories based on story structures. We show how the different story structures seen in app reviews can
-help developers with their specific goals.</p>
 					
-<p>EMBER discovers informative events that include useful actions promoting security in sociotechnical
-systems. CASPAR extracts high-quality event pairs regarding app problems from app reviews. By including
-both user actions and app problem events, event pairs provide richer information about how the problems
-occur than single events. SCHETURE targets full stories in app reviews and provides a way of analyzing
-stories based on their structures. Extracting and analyzing stories can capture much more information
-residing in textual artifacts.</p>
+<p>Comparisons are prevalent in text such as user reviews and are crucial for mining business intelligence. 
+Identifying the preferred entity in a comparative text can help understand user opinion and expectations.  
+Previous studies on Comparative Preference Classification (CPC) focus on sentences where two target entities are explicitly mentioned 
+and directly compared, such as A is faster than B.
+However, we have found that real-world comparisons are often implicit (B is slow, or indirect (A is here immediately while B takes forever). 
+In this study, we target the identification of preferred entity in a more realistic setting, identifying preferred app in a comparative app review sentence. 
+We present Pixie, a manually annotated dataset for preference classification from app reviews. 
+Pixie contains explicit comparisons as well as sentences that implicitly reveal user preferences without linguistic comparative structures.
+We experiment with traditional machine learning methods with sentence embeddings and transformer-based methods on Pixie to identify preferred entities in 
+comparative sentences.
+We also compare our results with the existing state-of-the-art model in CPC trained on Pixie.
+We find that transformer-based pretrained models fine-tuned on Pixie can achieve a weighted average F1 score of 85.23\% and notably outperform the previous 
+state-of-the-art method (73.99\%).</p>
 					
 					<span style="text-align: center;display: block;">
 						<img src="styles/structure.png"/></span>
 				</div> <!-- bodypara-text ends here -->
 			</div> <!-- bio ends here -->
 			
-			<div id="components">
+			<div id="Full Paper">
 				<div class="bodypara-head">Components</div>
 				<div class="bodypara-text">
-					This research is composed of three components, addressing the extraction of informative events, event pairs, and stories, respectively. 
-				<ul>
-					<li>EMBER: a framework for extracting informative events from breach reports and suggesting actions based on the association between breach descriptions and corrective actions.
-						<a href="https://hguo5.github.io/ActionSuggestion" target="_blank">Details >></a>
-					</li>
-					<li>CASPAR: a method for extracting and analyzing user-reported event pairs regarding app problems from app reviews. 
-						<a href="https://hguo5.github.io/Caspar/" target="_blank">Details >></a>
-					</li>
-					<li>SCHETURE: a framework for extracting informative stories and analyzing story structures as patterns of event types in app reviews.
+					<li>Pixie: Preference in Implicit and Explicit Comparisons
+						<a href="" target="_blank">Paper >></a>
 					</li>
 				</ul>
 				</div>
 			</div> <!-- committee ends here -->
-
-			<div id="paper">
-				<div class="bodypara-head">Documents</div>
-				<div class="bodypara-text">
-					<ul>
-						<li>
-						  <a href="docs/Dissertation_Hui_Guo_v2.1.pdf" target="_blank">Dissertation - Version 2.1 (Jun 14th, 2021)</a>
-						  -- fixed typos</li>
-						<li>
-						  <a href="docs/Dissertation_Hui_Guo_v2.pdf" target="_blank">Dissertation - Version 2 (May 13th, 2021)</a>
-						  -- title changed; Chapter 4 rewritten; ref to examples added</li>
-						<li>
-						  <a href="docs/Dissertation_Hui_Guo_v1.1.pdf" target="_blank">Dissertation - Version 1.1 (May 6th, 2021)</a>
-						  -- fixed the numbering of examples</li>
-						<li>
-						  <a href="docs/Dissertation_Hui_Guo_v1.pdf" target="_blank">Dissertation - Version 1 (Apr 27th, 2021)</a>
-						  -- version submitted for review</li>
-         				</ul>
-				</div>
-			</div> <!-- paper ends here -->
 			
 			<div id="slides">
 				<div class="bodypara-head">Slides</div>
 				<div class="bodypara-text">
 					<ul>
-						<li><a href="docs/Hui_PhD_Defense_Slides.pdf" target="_blank">Slides</a> (May 11th, 2021)</li>
+						<li><a href="" target="_blank">Slides</a> (Nov 12th, 2021)</li>
 						</li>
 					</ul>
 				</div>
 			</div> <!-- slides ends here -->
-
-			<div id="publication">
-				<div class="bodypara-head">Publications</div>
-				<div class="bodypara-text">
-					<ul>
-						<li>[<a href='https://2020.icse-conferences.org/details/icse-2020-papers/8/Caspar-Extracting-and-Synthesizing-User-Stories-of-Problems-from-App-Reviews' target='_blank'>Details</a>]
-							[<a href='docs/ICSE-20-Caspar.pdf' target='_blank'>PDF</a>]
-							<b>Caspar: Extracting and Synthesizing User Stories of Problems from App Reviews.</b>
-							<i>Proceedings of the 42nd IEEE International Conference on Software Engineering (ICSE)</i>, Seoul, May 2020, 628&ndash;640.
-						</li>
-						<li>[<a href='https://link.springer.com/article/10.1007/s10664-019-09753-2' target='_blank'>Details</a>]
-							[<a href='docs/EMSE-19-Corba.pdf' target='_blank'>PDF</a>]
-							<b>&Ccedil;orba: Crowdsourcing to Obtain Requirements from Regulations and Breaches.</b>
-							<i>Empirical Software Engineering (EMSE)</i>, Volume 25, Issue 1, January 2020, pages 532&ndash;561.
-						</li>
-						<li>[<a href='https://ieeexplore.ieee.org/document/8501306' target='_blank'>Details</a>]
-							[<a href='docs/AIRE-18-Breach.pdf' target='_blank'>PDF</a>]
-							<b>Extraction of Natural Language Requirements from Breach Reports Using Event Inference.</b>
-							<i>Proceedings of the 5th International Workshop on Artificial Intelligence for Requirements Engineering (AIRE)</i>, Banff, August 2018, pages 22&ndash;28.
-						</li>
-					</ul>
-				</div>
-			</div> <!-- publication ends here -->
 		
 		</div> <!-- body ends here -->
-        <div class="footer">Hui Guo. Last updated on June 14th, 2021. Template credit: <a href="https://niravajmeri.github.io/">Nirav Ajmeri</a></div>
+        <div class="footer">Amanul Haque. Last updated on Oct 29th, 2021. Template credit: <a href="https://niravajmeri.github.io/">Nirav Ajmeri</a></div>
     </div>
   </body>
 </html>
