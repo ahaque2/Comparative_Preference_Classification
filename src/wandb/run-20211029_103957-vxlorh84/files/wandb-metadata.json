@@ -1,0 +1,26 @@
+{
+    "os": "Linux-4.15.0-154-generic-x86_64-with-Ubuntu-18.04-bionic",
+    "python": "3.6.9",
+    "heartbeatAt": "2021-10-29T14:39:58.568779",
+    "startedAt": "2021-10-29T14:39:57.748265",
+    "docker": null,
+    "gpu": "GeForce RTX 2080 Ti",
+    "gpu_count": 2,
+    "cpu_count": 24,
+    "cuda": null,
+    "args": [
+        "-f",
+        "/home/ahaque2/.local/share/jupyter/runtime/kernel-4a8f175d-ed74-4180-8057-781c800ee84a.json"
+    ],
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/ahaque2/Pixie.git",
+        "commit": "df7dbc2008c3567837a7aa9625315726be7abd84"
+    },
+    "email": null,
+    "root": "/home/ahaque2/code/competitive_sentences/github/Pixie",
+    "host": "ajmeri",
+    "username": "ahaque2",
+    "executable": "/home/ahaque2/venv/py3/bin/python"
+}
